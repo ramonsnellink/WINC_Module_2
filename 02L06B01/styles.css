@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contact {
+  width: 350px;
+  border: 1px solid lightgrey;
+  border-radius: 7px;
+  display: inline-block;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.contact__contentcontainer {
+  padding: 18px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "name name avatar"
+    "relation relation avatar"
+    "message message message";
+}
+
+.contact__name {
+  font-size: 1.2rem;
+  grid-area: name;
+  margin-bottom: 5px;
+}
+
+.contact__relation {
+  font-size: 1rem;
+  font-weight: normal;
+  color: grey;
+  margin-bottom: 20px;
+  grid-area: relation;
+}
+
+.contact__avatar {
+  grid-area: avatar;
+}
+
+.contact__message {
+  grid-area: message;
+  color: gray;
+}
+
+.contact__message-highlight {
+  font-weight: bold;
+}
+.contact__buttoncontainer {
+  padding: 18px;
+  border-top: 1px solid lightgrey;
+  display: flex;
+  justify-content: center;
+}
+
+.contact__button {
+  text-decoration: none;
+  color: black;
+  padding: 12px 40px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.contact__button--approve {
+  color: limegreen;
+  border-color: limegreen;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.contact__button--decline {
+  color: red;
+  border-color: red;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
