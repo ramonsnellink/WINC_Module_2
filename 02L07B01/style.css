@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.links a:hover {
+  color: lightblue;
+  font-weight: bold;
+}
+
+.links a:active {
+  color: red;
+  font-style: italic;
+}
+
+.links a:visited {
+  color: yellow;
+}
+
+input:focus {
+  color: green;
+  font-size: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: inline;
+}
+
+li {
+  display: inline;
+}
+nav a {
+  padding: 10px;
+}
+nav a:first-child {
+  padding-left: 0px;
+}
+
+nav a:hover {
+  background: lightblue;
+}
+
+nav {
+  border: 1px solid red;
+  padding: 10px;
+  background: blue;
+}
+
+nav input {
+  display: inline;
+}
+
+nav input:focus {
+  border: 1px solid aquamarine;
+}
+.currentPage {
+  background: #b1b9e7;
+}
