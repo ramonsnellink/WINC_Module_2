@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+@import "./constants";
 
 /* Global */
 * {
   box-sizing: border-box;
 }
 body {
-  color: #090b08;
+  color: $black;
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  background-color: #ecffe9;
+  background-color: $lightgreen;
 }
 h1 {
   font-size: 1.7em;
@@ -31,7 +32,7 @@ h6 {
 }
 a {
   text-decoration: none;
-  color: #090b08;
+  color: $black;
 }
 ul {
   list-style: none;
@@ -39,7 +40,7 @@ ul {
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
-  border: solid 1px #000;
+  border: solid 1px $line;
   transition: all 0.3s ease-in;
 }
 .btn:hover,
@@ -61,7 +62,7 @@ form input:last-child {
   flex: 1 0 20%;
   border-left: 0;
   cursor: pointer;
-  background-color: #c0eea9;
+  background-color: $lightgreen;
   transition: all 0.25s ease;
 }
 #submit:hover {
@@ -74,12 +75,10 @@ form input:last-child {
 }
 input {
   padding: 10px;
-  border: 1px solid #000;
+  border: 1px solid $line;
 }
 
 /* Pas alleen de onderstaande regels aan */
-
-@import "./constants";
 
 /* Header */
 

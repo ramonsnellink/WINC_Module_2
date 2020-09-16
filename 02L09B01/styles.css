@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,500,700");
+/* Variables */
+/* Mixins */
 /* Global */
 * {
   -webkit-box-sizing: border-box;
@@ -10,7 +12,7 @@ body {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
-  background-color: #ecffe9;
+  background-color: #c0eea9;
 }
 
 h1 {
@@ -101,8 +103,6 @@ input {
 }
 
 /* Pas alleen de onderstaande regels aan */
-/* Variables */
-/* Mixins */
 /* Header */
 header {
   display: -webkit-box;
