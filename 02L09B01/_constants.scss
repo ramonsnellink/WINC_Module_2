@@ -1,0 +1,13 @@
+/* Variables */
+
+$lightgreen: #c0eea9;
+$limegreen: #97d279;
+$line: #000;
+$padding-standard: 20px;
+
+/* Mixins */
+@mixin text {
+  max-width: 700px;
+  text-align: center;
+  padding: $padding-standard;
+}

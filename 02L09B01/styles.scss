@@ -79,15 +79,18 @@ input {
 
 /* Pas alleen de onderstaande regels aan */
 
+@import "./constants";
+
 /* Header */
+
 header {
   display: flex;
   justify-content: space-around;
   position: fixed;
   width: 100%;
   z-index: 1;
-  padding: 20px;
-  background-color: #c0eea9;
+  padding: $padding-standard;
+  background-color: $lightgreen;
   height: 120px;
   -webkit-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 7px -9px rgba(0, 0, 0, 0.75);
@@ -96,7 +99,7 @@ header {
 
 .header__brand-logo img {
   width: auto;
-  padding-top: 20px;
+  padding-top: $padding-standard;
   height: 7.5em;
 }
 
@@ -114,7 +117,7 @@ header {
   &__line {
     width: 3em;
     height: 1px;
-    background-color: #000;
+    background-color: $line;
     margin-right: 1em;
 
     &--right {
@@ -127,11 +130,11 @@ header {
 
 /* Hero Section */
 .hero {
-  padding: 20px;
+  padding: $padding-standard;
   display: flex;
   height: 100vh;
   align-items: center;
-  background: #97d279;
+  background: $limegreen;
 
   &__img img {
     display: block;
@@ -140,15 +143,13 @@ header {
   }
 
   &__text {
-    max-width: 700px;
-    text-align: center;
-    padding: 20px;
+    @include text();
   }
 }
 
 /* Featured Section */
 .featured {
-  padding: 20px;
+  padding: $padding-standard;
 
   &__wrapper {
     display: flex;
@@ -160,13 +161,11 @@ header {
   }
 
   &__text {
-    max-width: 700px;
-    text-align: center;
-    padding: 20px;
+    @include text();
 
     & p {
       text-align: justify;
-      padding: 20px;
+      padding: $padding-standard;
       line-height: 1.4em;
     }
   }
@@ -175,13 +174,11 @@ header {
 /* About Section */
 
 .about {
-  background-color: #97d279;
-  padding: 20px;
+  background-color: $limegreen;
+  padding: $padding-standard;
 
   &__text {
-    max-width: 700px;
-    text-align: center;
-    padding: 20px;
+    @include text();
 
     & p {
       text-align: justify;
@@ -214,19 +211,19 @@ header {
 
 /* Contact Section */
 .contact {
-  padding: 20px;
+  padding: $padding-standard;
 
   &__wrapper {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: $padding-standard;
   }
 
   &__form-wrapper {
-    padding: 20px;
+    padding: $padding-standard;
   }
 
   &__copy-wrapper {
-    padding-left: 20px;
+    padding-left: $padding-standard;
   }
 }
